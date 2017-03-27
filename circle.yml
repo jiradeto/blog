@@ -14,7 +14,8 @@ deployment:
   prod:
     branch: master
     commands:
-      
+      - git config --global user.email "jiradet.jd@gmail.com"
+      - git config --global user.name "jiradeto"
       - cd _site && git remote set-url origin https://github.com/jiradeto/Hello4
       - cd _site && git add .
       - cd _site && git commit -m " update origin URL "
