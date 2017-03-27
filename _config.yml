@@ -1,4 +1,5 @@
 # Build settings
+exclude: [vendor]
 gems:
   - jemoji
   - jekyll-paginate
