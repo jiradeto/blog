@@ -14,8 +14,10 @@ deployment:
   prod:
     branch: master
     commands:
-      - echo 'list files' && ls -la
-      - cd _site && pwd && ls -la && git remote show origin
+      
+      - cd _site && git remote set-url origin https://github.com/jiradeto/Hello4
+      - cd _site && git add .
+      - cd _site && git commit -m " update origin URL "
+      - cd _site && git push origin master --force
       # - cd _site && pwd && ls -la && git init & git remote add origin https://github.com/jiradeto/Hello4 && echo 'add remote' && ls -la && git add . && git commit -m " add files" && git push origin master --force
-      - echo 'Hello Again wher are me ???' && pwd
-      - echo 'hello 2' && cd ./_site && pwd
+      
