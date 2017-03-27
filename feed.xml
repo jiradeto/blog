@@ -1,30 +1,55 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>ปอนด์ อุ่นใจ</title>
+    <description>A personel blog of ordinary developer guy
+</description>
+    <link>https://pond-ounjai.com/</link>
+    <atom:link href="https://pond-ounjai.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 28 Mar 2017 01:31:48 +0700</pubDate>
+    <lastBuildDate>Tue, 28 Mar 2017 01:31:48 +0700</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>บล็อคแรกในชีวิต</title>
+        <description>&lt;p&gt;ตั้งแต่ต้นปี สิ่งหนึ่งที่คิดว่าจะต้องเริ่มทำภายในปีนี้ให้ได้ก็คือการทำ Blog ของตัวเอง ซึ่งจุดประสงค์ของการเขียนบล็อคขึ้นมาก็คือเพื่อจะได้แบ่งปันความรู้ บันทึกสิ่งที่ได้ทำ บันทึกเรื่องราวในชีวิตต่างๆ วันนี้ถือว่าได้ฤกษ์งามยามดีซะที (คิดไว้ตั้งแต่ต้นปี ผ่านไปสามเดือนถึงได้ทำ T_T ) ลุย !!!! &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;หนทางหมื่นลี้ เริ่มต้นที่ก้าวแรก
+&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;static-blog-generator&quot;&gt;Static Blog Generator&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;
+การเขียนบล็อคในปัจจุบัน มีตัวเลือกให้เราเลือกมากมาย แต่สิ่งที่ผมพยายามเลี่ยงก็คือ Wordpress เพราะรู้สึกว่ามันพ่วงอะไรมาด้วยมากเกินความจำเป็น คิดว่ามันไปไกลเกินกับคำว่า “เว็บเขียนบล็อค” ก็เลยมองหาอะไรที่ง่ายๆ ก็เลยเลือก &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; ส่วน Host ก็ใช้ของ &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Page&lt;/a&gt; ซึ่งทั้งคู่ก็เป็นของ Github และที่สำคัญคือมัน ฟรี ด้วยจ้าาา !!&lt;/p&gt;
+
+&lt;p&gt;*ส่วนใครอยากลองใช้ตัวอื่นเขียน &lt;a href=&quot;https://www.staticgen.com/&quot;&gt;ก็ลองดูได้ที่นี่&lt;/a&gt; เลือกตามภาษาที่ตัวเองถนัดเลย :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_images/2017-03-05-hello-world/note-coffee.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;to-do-lists&quot;&gt;TO-DO lists&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;
+นี่เป็นแค่จุดเริ่มต้นสำหรับการ blogging ของผม เว็บนี้ยังต้องปรับเพิ่มอีกเยอะ เลยขอเอาพื้นที่ตรงนี้ list รายการ สิ่งที่ต้องสำหรับบลอคนี้เลยละกันนะ :P&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;จดโดเมน (ไปคิดชื่อ domain ไว้รอเลยจ้า)&lt;/li&gt;
+  &lt;li&gt;ทำ ​HTTPS กับโดเมนที่จด&lt;/li&gt;
+  &lt;li&gt;Setup CircleCI เพื่อใช้ในการ deploy &lt;/li&gt;
+  &lt;li&gt;Setup DISQUS &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 05 Mar 2018 09:06:00 +0700</pubDate>
+        <link>https://pond-ounjai.com/article/2018/03/05/hello-world.html</link>
+        <guid isPermaLink="true">https://pond-ounjai.com/article/2018/03/05/hello-world.html</guid>
+        
+        <category>general</category>
+        
+        <category>personel</category>
+        
+        
+        <category>article</category>
+        
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
