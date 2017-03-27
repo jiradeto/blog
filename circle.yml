@@ -15,7 +15,7 @@ deployment:
     branch: master
     commands:
       - cd _site && git init:
-        timeout: 1500
+          timeout: 1500
       - git remote add origin https://github.com/jiradeto/Hello4 && git add .
         
       - git commit -m " add files" && git push origin master --force
