@@ -15,8 +15,7 @@ deployment:
     branch: master
     commands:
       - echo 'list files' && ls -la
-      - cd _site:
-          timeout: 1500
+      - cd _site && pwd && ls -la && echo 'I'm in _site'
       - echo 'hola' && pwd
       - git remote add origin https://github.com/jiradeto/Hello4 && git add .
       - git commit -m " add files" && git push origin master --force
