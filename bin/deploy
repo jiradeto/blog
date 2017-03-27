@@ -1,0 +1,13 @@
+if [[ -d /_site ]]; then
+    echo "Removing _site directory"
+    rm -rf _site
+fi
+bundle exec jekyll build
+cd _site
+touch CNAME
+echo 'pond-ounjai.com' >> CNAME
+git init 
+git remote add origin https://github.com/jiradeto/jiradeto.github.io
+git add .
+git commit -m " init project [CI SKIP]" 
+git push origin master --force
